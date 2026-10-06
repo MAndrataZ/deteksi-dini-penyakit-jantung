@@ -1,0 +1,30 @@
+if (ST_Slope <= 1.5) and (ChestPainType <= 0.5) and (Sex > 0.5) and (Oldpeak > 0.15) then class: 1 (proba: 92.0%) | based on 150 samples
+
+if (ST_Slope > 1.5) and (Oldpeak <= 0.45) and (Cholesterol > 178.0) and (Cholesterol > 196.5) then class: 0 (proba: 92.91%) | based on 127 samples
+
+if (ST_Slope <= 1.5) and (ChestPainType > 0.5) and (Cholesterol > 176.0) and (Sex > 0.5) then class: 1 (proba: 56.86%) | based on 51 samples
+
+if (ST_Slope <= 1.5) and (ChestPainType <= 0.5) and (Sex > 0.5) and (Oldpeak <= 0.15) then class: 1 (proba: 100.0%) | based on 48 samples
+
+if (ST_Slope <= 1.5) and (ChestPainType <= 0.5) and (Sex <= 0.5) and (Oldpeak <= 1.7) then class: 1 (proba: 58.33%) | based on 24 samples
+
+if (ST_Slope > 1.5) and (Oldpeak > 0.45) and (Sex > 0.5) and (Cholesterol > 193.0) then class: 1 (proba: 54.17%) | based on 24 samples
+
+if (ST_Slope > 1.5) and (Oldpeak <= 0.45) and (Cholesterol > 178.0) and (Cholesterol <= 196.5) then class: 0 (proba: 100.0%) | based on 20 samples
+
+if (ST_Slope <= 1.5) and (ChestPainType > 0.5) and (Cholesterol > 176.0) and (Sex <= 0.5) then class: 0 (proba: 72.22%) | based on 18 samples
+
+if (ST_Slope > 1.5) and (Oldpeak > 0.45) and (Sex > 0.5) and (Cholesterol <= 193.0) then class: 1 (proba: 88.89%) | based on 18 samples
+
+if (ST_Slope > 1.5) and (Oldpeak <= 0.45) and (Cholesterol <= 178.0) and (ChestPainType > 0.5) then class: 0 (proba: 93.75%) | based on 16 samples
+
+if (ST_Slope <= 1.5) and (ChestPainType > 0.5) and (Cholesterol <= 176.0) then class: 1 (proba: 100.0%) | based on 16 samples
+
+if (ST_Slope > 1.5) and (Oldpeak > 0.45) and (Sex <= 0.5) and (Cholesterol > 179.0) then class: 0 (proba: 100.0%) | based on 13 samples
+
+if (ST_Slope <= 1.5) and (ChestPainType <= 0.5) and (Sex <= 0.5) and (Oldpeak > 1.7) then class: 1 (proba: 100.0%) | based on 10 samples
+
+if (ST_Slope > 1.5) and (Oldpeak <= 0.45) and (Cholesterol <= 178.0) and (ChestPainType <= 0.5) then class: 1 (proba: 62.5%) | based on 8 samples
+
+if (ST_Slope > 1.5) and (Oldpeak > 0.45) and (Sex <= 0.5) and (Cholesterol <= 179.0) then class: 1 (proba: 100.0%) | based on 1 samples
+

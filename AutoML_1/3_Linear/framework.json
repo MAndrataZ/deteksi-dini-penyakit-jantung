@@ -1,0 +1,148 @@
+{
+    "uid": "2be65f08-7147-47b2-9188-c7845315b507",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        0.58958656835366,
+                        0.9519645390265405,
+                        1.0437202634172307,
+                        52.86740721203673,
+                        0.4146432994079907
+                    ],
+                    "mean": [
+                        1.3584558823529411,
+                        0.7536764705882353,
+                        0.8876838235294118,
+                        231.69301470588235,
+                        0.7794117647058824
+                    ],
+                    "var": [
+                        0.347612321583045,
+                        0.9062364835640139,
+                        1.0893519882677336,
+                        2794.9627453233134,
+                        0.17192906574394465
+                    ],
+                    "n_samples_seen": 544,
+                    "n_features_in": 5,
+                    "columns": [
+                        "ST_Slope",
+                        "ChestPainType",
+                        "Oldpeak",
+                        "Cholesterol",
+                        "Sex"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "ST_Slope": [
+                        "scale_normal"
+                    ],
+                    "ChestPainType": [
+                        "scale_normal"
+                    ],
+                    "Oldpeak": [
+                        "scale_normal"
+                    ],
+                    "Cholesterol": [
+                        "scale_normal"
+                    ],
+                    "Sex": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "Logistic Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "58da619c-cede-4728-9091-a14d847d8a5b",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 43,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "ST_Slope": [
+                    "scale_normal"
+                ],
+                "ChestPainType": [
+                    "scale_normal"
+                ],
+                "Oldpeak": [
+                    "scale_normal"
+                ],
+                "Cholesterol": [
+                    "scale_normal"
+                ],
+                "Sex": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1\\X.data",
+            "y_path": "AutoML_1\\y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "seed": 43,
+            "explain_level": 2
+        },
+        "automl_random_state": 42,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 60
+    },
+    "saved": [
+        "3_Linear\\learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear\\predictions_validation.csv",
+    "metric_name": "accuracy",
+    "final_loss": "-0.8241758241758241",
+    "train_time": 7.939716577529907,
+    "is_stacked": false,
+    "joblib_version": "1.5.1",
+    "threshold": 0.31728561382604953
+}

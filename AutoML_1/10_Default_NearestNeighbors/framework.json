@@ -1,0 +1,151 @@
+{
+    "uid": "bf27d42d-a256-4cf4-8e8d-508593f671cc",
+    "name": "10_Default_NearestNeighbors",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        0.58958656835366,
+                        0.9519645390265405,
+                        1.0437202634172307,
+                        52.86740721203673,
+                        0.4146432994079907
+                    ],
+                    "mean": [
+                        1.3584558823529411,
+                        0.7536764705882353,
+                        0.8876838235294118,
+                        231.69301470588235,
+                        0.7794117647058824
+                    ],
+                    "var": [
+                        0.347612321583045,
+                        0.9062364835640139,
+                        1.0893519882677336,
+                        2794.9627453233134,
+                        0.17192906574394465
+                    ],
+                    "n_samples_seen": 544,
+                    "n_features_in": 5,
+                    "columns": [
+                        "ST_Slope",
+                        "ChestPainType",
+                        "Oldpeak",
+                        "Cholesterol",
+                        "Sex"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "ST_Slope": [
+                        "scale_normal"
+                    ],
+                    "ChestPainType": [
+                        "scale_normal"
+                    ],
+                    "Oldpeak": [
+                        "scale_normal"
+                    ],
+                    "Cholesterol": [
+                        "scale_normal"
+                    ],
+                    "Sex": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.7.1",
+            "algorithm_name": "k-Nearest Neighbors",
+            "algorithm_short_name": "Nearest Neighbors",
+            "uid": "72f00aa8-8975-4851-8247-9f1e5d05fb87",
+            "params": {
+                "model_type": "Nearest Neighbors",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "n_neighbors": 5,
+                "weights": "uniform",
+                "seed": 10,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": 100000,
+            "max_cols_limit": 100
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "ST_Slope": [
+                    "scale_normal"
+                ],
+                "ChestPainType": [
+                    "scale_normal"
+                ],
+                "Oldpeak": [
+                    "scale_normal"
+                ],
+                "Cholesterol": [
+                    "scale_normal"
+                ],
+                "Sex": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1\\X.data",
+            "y_path": "AutoML_1\\y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Nearest Neighbors",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "n_neighbors": 5,
+            "weights": "uniform",
+            "seed": 10,
+            "explain_level": 2
+        },
+        "automl_random_state": 42,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "10_Default_NearestNeighbors",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 60
+    },
+    "saved": [
+        "10_Default_NearestNeighbors\\learner_fold_0.k_neighbors"
+    ],
+    "predictions_fname": "10_Default_NearestNeighbors\\predictions_validation.csv",
+    "metric_name": "accuracy",
+    "final_loss": "-0.8736263736263736",
+    "train_time": 1.7438082695007324,
+    "is_stacked": false,
+    "joblib_version": "1.5.1",
+    "threshold": 0.4
+}

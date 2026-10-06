@@ -1,0 +1,6 @@
+feature,shap_importance
+ST_Slope,1.0414975
+ChestPainType,0.48309958
+Cholesterol,0.36991543
+Oldpeak,0.31682244
+Sex,0.1639045
