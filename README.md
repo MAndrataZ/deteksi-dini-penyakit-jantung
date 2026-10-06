@@ -1,4 +1,4 @@
-# Deteksi Dini Penyakit Jantung
+# Deteksi dini terhadap penderita penyakit jantung
 
 Proyek klasifikasi biner untuk memprediksi apakah seorang pasien terindikasi penyakit jantung (`HeartDisease` = 1) atau tidak (0), berdasarkan data klinis dasar dan hasil pemeriksaan saat olahraga. Seluruh alur kerja, dari eksplorasi sampai pemodelan, ada di satu notebook: `deteksi-jantung.ipynb`.
 
